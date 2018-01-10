@@ -1,9 +1,9 @@
 language: ruby
 rvm:
-	- 2.4
+  - 2.4
 env:
-	- DB_USERNAME='postgres'
-	- DB_PASSWORD=''
+  - DB_USERNAME='postgres'
+  - DB_PASSWORD=''
 services:
   - postgresql
 before_script:
