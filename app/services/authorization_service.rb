@@ -3,11 +3,11 @@ class AuthorizationService
     email = auth_hash["info"]["email"]
     admin = Admin.find_by(email: email)
 
-    unless admin.nil?
+    if admin.present?
       admin.first_name = auth_hash["info"]["first_name"]
       admin.last_name = auth_hash["info"]["last_name"]
     end
 
-    return admin
+    admin
   end
 end
