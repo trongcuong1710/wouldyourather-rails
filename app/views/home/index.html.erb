@@ -1,0 +1,11 @@
+<% if alert %>
+  <div class="alert alert-danger" role="alert">
+    <%= alert %>
+  </div>
+<% end %>
+
+<div class="wrapper">
+  <div class="jumbotron wrapper__content">
+      <%= link_to image_tag("btn_google_signin_light_normal_web@2x.png").html_safe, admin_google_oauth2_omniauth_authorize_path %>
+  </div>
+</div>
